@@ -1,16 +1,15 @@
+package main;
 
-public class PizzaFromageStyleBrest extends Pizza{
-
-	
+public class PizzaFromageStyleStrasbourg extends Pizza{
 	
 	@Override
 	public String getNom() {
-		return "Pizza sauce style brest et fromage";
+		return "Pizza pate style Strasbourg et fromage";
 	}
 
 	@Override
 	public void preparer() {
-		this.garnitures.add("Parmigiano reggiano rape");
+		this.garnitures.add("Mozzarella en lamelles");
 		super.preparer();
 	}
 
@@ -21,7 +20,7 @@ public class PizzaFromageStyleBrest extends Pizza{
 
 	@Override
 	public void couper() {
-		System.out.println("Decoupage en parts triangulaires");
+		super.couper();
 	}
 
 	@Override

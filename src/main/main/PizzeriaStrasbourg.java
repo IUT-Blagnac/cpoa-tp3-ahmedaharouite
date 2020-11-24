@@ -1,13 +1,14 @@
+package main;
 
-public class PizzeriaBrest extends Pizzeria {
-
+public class PizzeriaStrasbourg extends Pizzeria {
+	
 	@Override
 	public Pizza commanderPizza(String type) {
 
 		Pizza pizza;
 
 		if (type.equals("fromage")) {
-			pizza = new PizzaFromageStyleBrest();
+			pizza = new PizzaFromageStyleStrasbourg();
 		} else if (type.equals("grecque")) {
 			pizza = new PizzaGrecque();
 		} else {
