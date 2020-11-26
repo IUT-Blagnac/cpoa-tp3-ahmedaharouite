@@ -91,7 +91,7 @@ endif::[]
 
 {firstName}:: Ahmed
 
-{group} #::4
+{group} #:: 4
 
 [%interactive]
 - [x] {Enseignants}
