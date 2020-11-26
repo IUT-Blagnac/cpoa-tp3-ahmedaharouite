@@ -91,14 +91,14 @@ endif::[]
 
 {firstName}:: Ahmed
 
-{group} #:: 4
+{group} #::
 
 [%interactive]
 - [x] {Enseignants}
 - [ ] 1
 - [ ] 2
 - [ ] 3
-- [ ] 4
+- [x] 4
 - [ ] Innopolis
 
 //------------------------------------ 
