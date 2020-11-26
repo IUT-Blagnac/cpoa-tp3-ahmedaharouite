@@ -90,7 +90,6 @@ endif::[]
 {lastName}:: AHAROUITE
 
 {firstName}:: Ahmed
-
 {group} #::
 
 [%interactive]
@@ -336,5 +335,4 @@ image:88x31.png["Licence Creative
 Commons",style="border-width:0",link="http://creativecommons.org/licenses/by-sa/3.0/"]
 http://creativecommons.org/licenses/by-sa/3.0/[licence Creative Commons Paternité - Partage à l&#39;Identique 3.0 non transposé].
 ****************************************************************
-
 endif::[]
