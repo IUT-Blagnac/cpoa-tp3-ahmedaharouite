@@ -11,33 +11,13 @@
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<encoding>UTF-8</encoding>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
-				<version>3.0.0</version>
+				<artifactId>maven-source-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>fix0</id>
-						<phase>install</phase>
+						<id>attach-sources</id>
 						<goals>
-							<goal>exec</goal>
+							<goal>jar</goal>
 						</goals>
-						<configuration>
-							<executable>ruby</executable>
-							<workingDirectory>tests</workingDirectory>
-							<arguments>
-								<argument>testfix0.rb</argument>
-								<argument>../README.adoc</argument>
-							</arguments>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
