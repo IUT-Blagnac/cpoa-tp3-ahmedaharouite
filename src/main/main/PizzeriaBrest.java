@@ -2,18 +2,18 @@ package main;
 
 public class PizzeriaBrest extends Pizzeria {
 
+	FabriquePizzaBrest fabrique;
+	
+	public PizzeriaBrest() {
+		fabrique = FabriquePizzaBrest.getInstance();
+	}
+	
+	
+	
 	@Override
 	public Pizza commanderPizza(String type) {
 
-		Pizza pizza;
-
-		if (type.equals("fromage")) {
-			pizza = new PizzaFromageStyleBrest();
-		} else if (type.equals("grecque")) {
-			pizza = new PizzaGrecque();
-		} else {
-			pizza = new PizzaPoivrons();
-		}
+		Pizza pizza = fabrique.creerPrizza(type);
 
 		pizza.preparer();
 		pizza.cuire();

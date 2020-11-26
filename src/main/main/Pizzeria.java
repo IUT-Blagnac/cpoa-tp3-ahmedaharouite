@@ -2,21 +2,19 @@ package main;
 
 abstract public class Pizzeria {
 
+	FabriquePizza fabrique;
+	
+	public Pizzeria() {
+		fabrique = FabriquePizza.getInstance();
+	}
+	
 	/**
 	 * @param type
 	 * @return a Pizza object according to the type
 	 */
 	public Pizza commanderPizza(String type) {
 
-		Pizza pizza;
-
-		if (type.equals("fromage")) {
-			pizza = new PizzaFromage();
-		} else if (type.equals("grecque")) {
-			pizza = new PizzaGrecque();
-		} else {
-			pizza = new PizzaPoivrons();
-		}
+		Pizza pizza = fabrique.creerPrizza(type);
 
 		pizza.preparer();
 		pizza.cuire();

@@ -1,6 +1,12 @@
 package main;
 
-public class Fabrique {
+public class FabriquePizza {
+	static FabriquePizza instance = new FabriquePizza();
+	
+	public static FabriquePizza getInstance() {
+		return instance;
+	}
+	
 	public static Pizza creerPrizza(String type) {
 		Pizza pizza = null;
 		
