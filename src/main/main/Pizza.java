@@ -23,7 +23,7 @@ abstract public class Pizza {
 		System.out.println("Préparation de Pizza\nÉtalage de la pâte...\nAjout de la sauce...\nAjout des garnitures:");
 
 		for (int i=0; i<garnitures.size(); i++) {
-			System.out.println("  " + garnitures.get(i));
+			System.out.println(" " + garnitures.get(i));
 		}
 	}
 
