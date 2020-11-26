@@ -20,7 +20,7 @@ public class PizzaFromageStyleStrasbourg extends Pizza{
 
 	@Override
 	public void couper() {
-		super.couper();
+		System.out.println("Decoupage en parts carrees");
 	}
 
 	@Override

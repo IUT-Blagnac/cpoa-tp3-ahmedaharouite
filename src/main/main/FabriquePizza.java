@@ -1,7 +1,7 @@
 package main;
 
-public class FabriquePizza {
-	static FabriquePizza instance = new FabriquePizza();
+ public abstract class FabriquePizza {
+	static FabriquePizza instance;
 	
 	public static FabriquePizza getInstance() {
 		return instance;

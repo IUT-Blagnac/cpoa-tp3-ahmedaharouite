@@ -52,7 +52,7 @@ abstract class Pizzeria [[java:main.Pizzeria]] {
 class FabriquePizza [[java:main.FabriquePizza]] {
 }
 Pizzeria --> "1" FabriquePizza : fabrique
-class FabriquePizza [[java:main.FabriquePizza]] {
+abstract class FabriquePizza [[java:main.FabriquePizza]] {
 	~{static}FabriquePizza instance
 	+{static}FabriquePizza getInstance()
 	+{static}Pizza creerPrizza(String type)
