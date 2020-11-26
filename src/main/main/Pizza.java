@@ -20,7 +20,7 @@ abstract public class Pizza {
 	}
 
 	public void preparer() {
-		System.out.println("Preparation de Pizza\nEtalage de la pate... \nAjout de la sauce... \nAjout des garnitures: ");
+		System.out.println("Préparation de Pizza\nÉtalage de la pâte...\nAjout de la sauce...\nAjout des garnitures:");
 
 		for (int i=0; i<garnitures.size(); i++) {
 			System.out.println("  " + garnitures.get(i));
@@ -32,10 +32,10 @@ abstract public class Pizza {
 	}
 
 	public void couper() {
-		System.out.println("Decoupage par default");
+		System.out.println("Découpage par défault");
 	}
 
 	public void emballer() {
-		System.out.println("Emballage dans une boite officielle");
+		System.out.println("Emballage dans une boîte officielle");
 	}
 }

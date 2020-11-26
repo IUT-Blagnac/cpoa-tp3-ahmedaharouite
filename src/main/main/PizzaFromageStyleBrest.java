@@ -9,7 +9,7 @@ public class PizzaFromageStyleBrest extends Pizza{
 
 	@Override
 	public void preparer() {
-		this.garnitures.add("Parmigiano reggiano rape");
+		this.garnitures.add(" Parmigiano reggiano râpé");
 		super.preparer();
 	}
 
@@ -20,7 +20,7 @@ public class PizzaFromageStyleBrest extends Pizza{
 
 	@Override
 	public void couper() {
-		System.out.println("Decoupage en parts triangulaires");
+		System.out.println("Découpage en parts triangulaires");
 	}
 
 	@Override
