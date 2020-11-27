@@ -9,7 +9,7 @@ public class PizzaFromageStyleStrasbourg extends Pizza{
 
 	@Override
 	public void preparer() {
-		this.garnitures.add("Mozzarella en lamelles");
+		this.getGarnitures().add("Mozzarella en lamelles");
 		super.preparer();
 	}
 

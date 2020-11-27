@@ -22,8 +22,8 @@ abstract public class Pizza {
 	public void preparer() {
 		System.out.println("Préparation de Pizza\nÉtalage de la pâte...\nAjout de la sauce...\nAjout des garnitures:");
 
-		for (int i=0; i<garnitures.size(); i++) {
-			System.out.println(" " + garnitures.get(i));
+		for (int i=0; i<getGarnitures().size(); i++) {
+			System.out.println(" " + getGarnitures().get(i));
 		}
 	}
 
@@ -37,5 +37,9 @@ abstract public class Pizza {
 
 	public void emballer() {
 		System.out.println("Emballage dans une boîte officielle");
+	}
+
+	public ArrayList<String> getGarnitures() {
+		return garnitures;
 	}
 }

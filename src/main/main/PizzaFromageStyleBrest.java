@@ -9,7 +9,7 @@ public class PizzaFromageStyleBrest extends Pizza{
 
 	@Override
 	public void preparer() {
-		this.garnitures.add("Parmigiano reggiano râpé");
+		this.getGarnitures().add("Parmigiano reggiano râpé");
 		super.preparer();
 	}
 
